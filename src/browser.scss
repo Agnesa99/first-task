@@ -7,8 +7,8 @@
 .item{
     border:1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
-    width: 30%;
+    padding: 767px;
+    width: 100%;
     margin: 20px 0;
     position: relative;
 
@@ -28,6 +28,7 @@
 .p{
     font-size: 19px;
     margin: 15px 0 25px;
+    
   
 }
 button{
@@ -39,4 +40,7 @@ button{
     position:absolute;
    margin-bottom:20px;
 
+}
+.card{
+    position: relative;
 }
