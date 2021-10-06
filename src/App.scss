@@ -1,0 +1,181 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+.App .items{
+  margin:5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .item{
+    width: 28.5%;
+    display: flex;
+    align-items: center;
+    margin:30px 0;
+  }
+  .icon{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #ddd;
+    border-radius: 50%;
+    font-size: 35px;
+    color:#427cff; 
+    margin-right: 20px;
+  }
+  .block{
+    flex: 1;
+  }
+  h6{
+    font-size: 17px;
+    margin-bottom: 7px;
+  }
+  p{
+    font-size: 17px;
+  }
+}
+
+@media(max-width:1450px){
+  .App{
+    .item{
+      width: 28.5%;
+      margin:25px 0;
+    }
+    .icon{
+      width: 55px;
+      height: 55px;
+      font-size: 30px;
+      margin-right: 15px;
+    }
+
+    h6{
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+
+.App .users{
+  margin:7.5%;  
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  .user-card{
+      width: 29%;
+      margin:20px 2.1%;
+      border:1px solid #ddd;
+      padding:25px;
+      border-radius: 10px;
+  }
+  .date{
+      font-size: 17px;
+      color:#222;
+  }
+  .inline{
+      display: flex;
+      align-items: center;
+      margin:20px 0;
+  }
+  span{
+      padding:4px 15px;
+      color:#fff;
+      border-radius: 5px;
+      font-size: 15px;
+  }
+  .img{
+      width: 45px;
+      margin:0 10px;
+  }
+  .name{
+      font-size: 17px;
+  }
+  .description{
+      color:#555;
+      font-size: 17px;
+      margin-bottom: 25px;
+  }
+  button{
+      cursor: pointer;
+      border:1px solid blue;
+      background: none;
+      padding:10px 30px;
+      font-size: 17px;
+      border-radius: 25px;
+      color: blue;
+  }
+}
+
+@media(max-width:1401px){
+  .App .users{
+      margin:7.5%;
+      h1{
+          font-size: 25px;
+          margin-bottom: 30px;
+      }
+      .user-card{
+          width: 30%;
+          margin:20px 1.6%;
+          padding:20px;
+      }
+      .date{
+          font-size: 14px;
+      }
+      .inline{
+          margin:15px 0;
+      }
+      span{
+          font-size: 13px;
+      }
+      .img{
+          width: 40px;
+      }
+      .name{
+          font-size: 14px;
+      }
+      .description{
+          font-size: 14px;
+          margin-bottom: 20px;
+      }
+      button{
+          font-size: 14px;
+      }
+  }
+}
+
+@media(max-width:1000px){
+  .App .users{
+      h1{
+          font-size: 25px;
+          margin-bottom: 20px;
+      }
+      .user-card{
+          width: 45%;
+          margin:15px 2.5%;
+      }
+  }
+}
+
+@media(max-width:650px){
+  .App .users{
+      margin:45px 7.5%;
+      h1{
+          font-size: 20px;
+          margin-bottom: 10px;
+      }
+      .user-card{
+          width: 350px;
+          max-width: 100%;
+          margin:15px auto;
+      }
+  }
+}
